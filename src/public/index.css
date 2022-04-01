@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(231, 231, 231);
+}
+h1{
+    padding-left: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+input{
+    margin-left: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    width: 400px;
+    border-radius: 25px;
+}
+#log{
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 100% ;
+}
+
+.bubbleChat{
+        background-color: rgb(39, 111, 245);
+        color: white;
+        width: 250px;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 15px  ;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        border-radius: 10px;
+}
+.triangle{
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-right: 15px solid rgb(39, 111, 245);
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    z-index: 99;  
+}
+.user{
+    padding-left: 5 px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+}
+.message{
+    font-weight: 300;
+}
+.hour{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+}

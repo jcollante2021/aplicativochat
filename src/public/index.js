@@ -2,6 +2,10 @@ let socket = io();
 let chatBox = document.getElementById('chatBox')
 let log = document.getElementById('log')
 let user;
+let today = new Date();
+let hour = today.getHours() + ':' + today.getMinutes();
+let ampm = today.getHours() >= 12 ? 'pm' : 'am';
+let date = hour + ' ' + ampm    
 
 Swal.fire({
     title: "identificate",
@@ -25,8 +29,13 @@ chatBox.addEventListener('keyup', evt=>{
 
 socket.on('log', data=>{
     let message="";
-    data.forEach(log => {
-        message = message + `<b>${log.user}</b> dice: ${log.message} </br>`
+    data.reverse().forEach(log => {
+        message = message + `<div class="bubbleChat">
+                                <div class="triangle"></div>
+                                <h4 class="user">${log.user}</h4>
+                                <span class="message">${log.message}</span>
+                            </div>
+                            <span class="hour">${date}</span>`
     });
     log.innerHTML = message
 })

@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicacion chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-    <h1 style="color: green;">WASAP Beta v2.36.25</h1>
+    <h1 style="color: green;">MESENSHER Beta v2.36.25</h1>
     <hr><br>
     <div>
-        <input id="chatBox">
-        
+        <input id="chatBox" placeholder="Ingrese el Texto Aquí...">
     </div>
-    <p id="log"></p>
+    <div id="log">
+
+    </div>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/index.js"></script>
