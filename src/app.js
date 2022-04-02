@@ -13,6 +13,7 @@ const io = new Server(server)
 
 let log = [];
 io.on('connection', socket=>{
+    socket.emit('log', log)
     socket.on('message', data=>{
         log.push(data);
         io.emit('log', log)
